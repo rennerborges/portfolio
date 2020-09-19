@@ -65,13 +65,11 @@ html {
 
 /* =========== HERO-BANNER ========== */
 
-#s-heroBanner {
+#s-heroBanner > .container{
     width: 100%;
     /* height: 87vh; */
     height: calc(var(--vh, 1vh) * 87);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -102,6 +100,20 @@ html {
     margin-left: 0;
 }
 
+.left-heroBanner {
+    width: 100%;
+    flex: 1;
+    flex-grow: 2.5;
+}
+
+.right-heroBanner {
+    width: 100%;
+    flex: 2;
+}
+.right-heroBanner img {
+    width: 100%;
+    max-height: 400px;
+}
 /* =========== ARROW ========== */
 .arrow {
     width: 100%;
@@ -132,6 +144,12 @@ html {
         transform: translateY(0px);
     }
 }
+
+@media screen and (max-width: 950px) {
+    .right-heroBanner {
+        display: none;
+    }
+  }
 
 @media screen and (max-width: 450px) {
     #s-heroBanner h1 {
