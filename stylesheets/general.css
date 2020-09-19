@@ -83,6 +83,23 @@ html {
     font-weight: 500;
 }
 
+#redesSociais {
+    display: flex;
+    align-items: center;
+}
+
+#redesSociais img {
+    width: 30px;
+}
+
+#redesSociais a {
+    margin-left: 10px;
+}
+
+#redesSociais a:first-child {
+    margin-left: 0;
+}
+
 /* =========== ARROW ========== */
 .arrow {
     width: 100%;
@@ -113,3 +130,13 @@ html {
         transform: translateY(0px);
     }
 }
+
+@media screen and (max-width: 450px) {
+    #s-heroBanner h1 {
+        min-height: 102px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+  }
