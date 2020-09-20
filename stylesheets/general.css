@@ -163,26 +163,74 @@ html {
     box-shadow: 10px 10px 23px -6px rgba(224,224,224,1);
 }
 
-#sobreMim .titulo h1 {
+.titulo h1 {
     font-weight: 500;
     font-size: 1.7rem;
     margin: 0;
     margin-bottom: 10px;
 }
 
-#sobreMim .conteudo {
-    margin-left: 50px;
-}
-
-#sobreMim .titulo div {
+.titulo div {
     width: 80px;
     height: 2px;
     background-color: #1a237e;
 }
 
+#sobreMim .conteudo {
+    margin-left: 50px;
+}
+
+
 #sobreMim .conteudo p{
     font-weight: 300;
     line-height: 30px;
+}
+
+/* =========== CONHECIMENTOS ========== */
+
+#conhecimentos {
+    padding: 75px 0px;
+    box-sizing: border-box;
+    background-color: #fafafa;
+}
+
+#group-conhecimentos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-conhecimentos {
+    width: 100%;
+    flex: 1;
+    min-width: 300px;
+    min-height: 350px;
+    margin: 30px 10px 0px 0px;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 25px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: 10px 10px 23px -6px rgba(224,224,224,1);
+    -moz-box-shadow: 10px 10px 23px -6px rgba(224,224,224,1);
+    box-shadow: 10px 10px 23px -6px rgba(224,224,224,1);
+}
+
+.header-conhecimentos > img {
+    width: 80px;
+}
+
+.titulo-conhecimentos h2 {
+    font-weight: 500;
+}
+
+.descricao-conhecimentos p {
+    font-weight: 300;
+    line-height: 26px;
+    text-align: center;
 }
 
 /* =========== ANIMAÇÕES ========== */
