@@ -202,9 +202,9 @@ html {
 .item-conhecimentos {
     width: 100%;
     flex: 1;
-    min-width: 300px;
+    min-width: 280px;
     min-height: 350px;
-    margin: 30px 10px 0px 0px;
+    margin: 30px 20px 0px 0px;
     border-radius: 8px;
     overflow: hidden;
     padding: 25px;
@@ -214,10 +214,17 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 0.4s;
     -webkit-box-shadow: 10px 10px 23px -6px rgba(224,224,224,1);
     -moz-box-shadow: 10px 10px 23px -6px rgba(224,224,224,1);
     box-shadow: 10px 10px 23px -6px rgba(224,224,224,1);
 }
+
+.item-conhecimentos:hover{
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
 
 .header-conhecimentos > img {
     width: 80px;
@@ -265,6 +272,14 @@ html {
     }
     #sobreMim .conteudo {
         margin-left: 0px;
+    }
+}
+
+
+@media screen and (max-width: 654px) {
+    .item-conhecimentos{
+        margin-right: 0;
+        flex: none;
     }
 }
 
