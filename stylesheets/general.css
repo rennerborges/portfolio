@@ -285,6 +285,27 @@ html {
     text-align: center;
 }
 
+/* =========== CONTRUIÇÕES ========== */
+
+.item-contribuicoes {
+    width: 100%;
+    flex: 1;
+    min-width: 280px;
+    min-height: 350px;
+    margin: 30px 20px 0px 0px;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 25px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.4s;
+    border: 1px solid #1a237e;
+}
+
 /* =========== ANIMAÇÕES ========== */
 @keyframes arrow {
     0% {
@@ -325,7 +346,7 @@ html {
     #group-conhecimentos {
         justify-content: center;
     }
-    .item-conhecimentos {
+    .item-conhecimentos, .item-contribuicoes {
         flex: none;
         width: 98%;
         margin-right: 0px;
