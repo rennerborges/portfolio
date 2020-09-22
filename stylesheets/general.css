@@ -15,6 +15,11 @@ html {
     scroll-behavior: smooth;
 }
 
+.espacamento-sections {
+    padding: 75px 0px;
+    box-sizing: border-box;
+}
+
 /* =========== CONTAINER ========== */
 
 .container {
@@ -139,8 +144,6 @@ html {
 #sobreMim {
     width: 100%;
     background-color: #f5f5f5;
-    padding: 75px 0px;
-    box-sizing: border-box;
 }
 
 #sobreMim>.container {
@@ -189,8 +192,6 @@ html {
 /* =========== CONHECIMENTOS ========== */
 
 #conhecimentos {
-    padding: 75px 0px;
-    box-sizing: border-box;
     background-color: #fafafa;
 }
 
@@ -262,7 +263,7 @@ html {
 }
 
 @media screen and (max-width: 800px) {
-    #sobreMim, #conhecimentos {
+    .espacamento-sections {
         padding: 50px 0px;
     }
     #sobreMim .container .fotoPerfil {

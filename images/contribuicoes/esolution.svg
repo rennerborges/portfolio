@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500"
+   height="500"
+   viewBox="0 0 132.29166 132.29167"
+   version="1.1"
+   id="svg8"
+   inkscape:export-filename="/home/luizalexandrew/Developer/Github/esolutionpdv/res/icon/ios/Icon-Small-50x50@2x.png"
+   inkscape:export-xdpi="19.193586"
+   inkscape:export-ydpi="19.193586"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="logoEsolution.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="253.30102"
+     inkscape:cy="185.71649"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:measure-start="0,0"
+     inkscape:measure-end="0,0"
+     inkscape:window-width="1553"
+     inkscape:window-height="856"
+     inkscape:window-x="1557"
+     inkscape:window-y="45"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-164.70832)">
+    <path
+       style="fill:#373435;fill-opacity:1;stroke-width:0.49444646"
+       d="m 66.566092,286.91816 v -6.36776 l 2.853989,-0.27753 c 14.013201,-1.36282 22.746745,-3.85258 31.684659,-9.03272 10.44244,-6.05214 19.83736,-16.09655 25.05171,-26.78365 l 1.52962,-3.13506 -0.33909,2.2165 c -1.5613,10.20507 -8.40868,22.74577 -17.31983,31.7204 -10.470172,10.54476 -27.30067,18.02759 -40.548004,18.02759 H 66.566092 Z M 3.5458032,220.23889 c -0.00978,-0.21742 0.349321,-1.98779 0.7954244,-3.93416 2.5192959,-10.99191 9.2068864,-22.26354 18.2480934,-30.75643 10.424021,-9.79182 23.618701,-15.62241 37.801881,-16.7043 l 4.189511,-0.31956 v 6.64688 6.64688 l -5.335715,0.32272 c -22.877598,1.38372 -42.867483,14.14153 -53.3415482,34.0433 -1.2880917,2.4475 -2.3490377,4.27211 -2.3576466,4.05467 z"
+       id="path856-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccssccccscccccsc"
+       inkscape:export-xdpi="13.82"
+       inkscape:export-ydpi="13.82"
+       inkscape:export-filename="/home/luizalexandrew/Developer/Github/esolutioningressos/res/icon/android/hdpi.png" />
+    <path
+       style="fill:#3e4095;fill-opacity:1;stroke-width:0.49444646"
+       d="M 49.442461,291.5558 C 29.332585,286.28698 12.065121,269.93586 5.816398,250.24489 4.247878,245.30211 3.034077,238.68352 3.034077,235.07328 v -2.64453 h 6.3842489 6.3842391 l 0.348197,4.30985 c 1.412578,17.48349 8.264533,32.39633 19.995134,43.51806 4.419697,4.19025 8.273387,6.92588 14.221651,10.0954 4.435407,2.36339 4.27881,2.56719 -0.925086,1.20374 z m 12.65681,-23.68569 C 42.185482,265.48996 28.107238,247.923 30.358309,228.26342 c 1.7046,-14.88701 13.309865,-27.45605 28.253637,-30.59999 4.437928,-0.93366 13.133014,-0.88407 17.535198,0.10001 9.133952,2.04186 16.888675,7.467 22.581878,15.79806 1.146882,1.67828 2.078308,3.22985 2.069828,3.4479 -0.01,0.21803 -10.841591,7.02807 -24.07357,15.13339 -27.360111,16.7596 -25.571992,15.02764 -18.87425,18.28161 8.133366,3.95138 16.405592,3.11546 27.527539,-2.78173 2.601738,-1.37953 4.794078,-2.31934 4.871829,-2.08847 0.07782,0.23087 1.60057,3.39434 3.384021,7.0299 2.479784,5.05508 3.092712,6.71089 2.605419,7.03846 -0.350472,0.23559 -3.09411,1.63066 -6.097004,3.10015 -6.192997,3.03056 -10.91113,4.43037 -17.372116,5.15404 -4.947404,0.55414 -5.984956,0.55348 -10.671447,-0.008 z m 1.317709,-42.65013 c 8.283949,-5.03326 15.061713,-9.33796 15.061713,-9.56593 0,-0.7251 -3.214963,-2.88016 -5.493871,-3.68264 -2.753,-0.96945 -8.855057,-0.99548 -11.99737,-0.0511 -8.712724,2.6182 -14.274905,10.65606 -14.274905,20.62844 0,2.07565 0.124941,2.40066 0.821349,2.13546 0.451746,-0.17199 7.599136,-4.43088 15.883084,-9.46415 z m 51.78935,1.66756 c -9.7e-4,-1.69315 -0.32912,-5.07994 -0.72895,-7.52613 -3.44312,-21.06616 -14.901504,-37.28854 -33.55403,-47.50476 -3.433091,-1.88035 -3.549535,-1.9957 -1.700131,-1.68452 9.480358,1.59513 21.315101,7.9403 29.734201,15.94192 11.64026,11.06308 17.87172,23.99189 19.41473,40.28093 l 0.33827,3.57103 h -6.75104 -6.75105 l -0.003,-3.07847 z"
+       id="path856"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="scscccccsscsccccsccccccccccsccscccccccscccccc"
+       inkscape:export-xdpi="13.82"
+       inkscape:export-ydpi="13.82"
+       inkscape:export-filename="/home/luizalexandrew/Developer/Github/esolutioningressos/res/icon/android/hdpi.png" />
+  </g>
+</svg>
