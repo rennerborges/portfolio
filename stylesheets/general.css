@@ -20,6 +20,26 @@ html {
     box-sizing: border-box;
 }
 
+/* =========== SCROLLBAR ========== */
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    background-color: #EFF3F6;
+    background-color: #EFF3F6;
+
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #97A7B4;
+    /* border: 1px solid #424242 */
+}
+
 /* =========== CONTAINER ========== */
 
 .container {
