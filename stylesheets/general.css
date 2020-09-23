@@ -225,7 +225,7 @@ html {
     flex: 1;
     min-width: 280px;
     min-height: 350px;
-    margin: 30px 20px 0px 0px;
+    margin: 30px 10px;
     border-radius: 8px;
     overflow: hidden;
     padding: 25px;
@@ -288,11 +288,10 @@ html {
 /* =========== CONTRUIÇÕES ========== */
 
 .item-contribuicoes {
-    width: 100%;
     flex: 1;
     min-width: 280px;
     min-height: 350px;
-    margin: 30px 20px 0px 0px;
+    margin: 30px 10px;
     border-radius: 8px;
     overflow: hidden;
     padding: 25px;
@@ -350,6 +349,7 @@ html {
         flex: none;
         width: 98%;
         margin-right: 0px;
+        margin-left: 0px;
     }
 }
 
