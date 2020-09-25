@@ -340,13 +340,18 @@ html {
     margin: 5px 5px;
 }
 
-.tag > span{
+.tag > span {
     color: #97A7B4;
 }
 
-/* .swiper-slide {
-    width: auto !important;
-} */
+.preloader {
+    margin-top: 30px;
+    height: 300px;
+
+}
+.swiper-container {
+    display: none;
+}
 
 /* =========== CONTRUIÇÕES ========== */
 

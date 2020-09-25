@@ -1,7 +1,8 @@
 typerWriter();
 adaptHeightViewport();
 getYear('#valueAno');
-swiperProjetos();
+
+getProjetos();
 
 function adaptHeightViewport(){
     actionAdapt();
@@ -56,4 +57,74 @@ function swiperProjetos(){
             },
         });
     }
+}
+
+async function getProjetos(){
+
+    verifyProjetosLocalStorage();
+
+    let projetos = localStorage.getItem('projetos');
+
+    let swiper = document.querySelector('.swiper-wrapper');
+
+    projetos = JSON.parse(projetos);
+
+
+    for (let i = 0; i < projetos.length; i++) {
+        const tags = await Ajax(projetos[i].languages_url);
+
+        const contentTags =  prepareTags(tags.data)
+
+
+        swiper.innerHTML +=
+            ` <div class="swiper-slide">
+                <div class="projetos-card">
+                    <div class="title">
+                        <h2>${projetos[i].name}<h2>
+                    </div>
+                    <div class="description">
+                        <p>${projetos[i].description ? projetos[i].description : 'Projeto sem descrição'}</p>
+                    </div>
+                    <div class="tags">
+                        ${contentTags}
+                    </div>
+                </div>
+            </div>`
+        
+    }
+
+    document.querySelector('.preloader').style.display = 'none';
+    document.querySelector('.swiper-container').style.display = 'block';
+    
+    swiperProjetos();
+
+}
+
+async function Ajax(url){
+
+    let ajax = window.ajaxPromise;
+    let method = 'GET';
+
+    return await ajax({ method, url });
+}
+
+function prepareTags(tags){
+    let tag = '';
+
+    Object.keys(tags).forEach(item => {
+        tag += `
+            <div class="tag">
+                <span>${item}</span>
+            </div>
+        `
+    })
+
+    return tag;
+}
+
+async function verifyProjetosLocalStorage(){
+    if(!localStorage.getItem('projetos')){
+        const projetos = await Ajax('https://api.github.com/users/rennerborges/repos');
+        localStorage.setItem('projetos', JSON.stringify(projetos.data));
+    } 
 }
