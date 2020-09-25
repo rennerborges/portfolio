@@ -61,7 +61,7 @@ function swiperProjetos(){
 
 async function getProjetos(){
 
-    verifyProjetosLocalStorage();
+    await verifyProjetosLocalStorage();
 
     let projetos = localStorage.getItem('projetos');
 
@@ -122,9 +122,17 @@ function prepareTags(tags){
     return tag;
 }
 
-async function verifyProjetosLocalStorage(){
-    if(!localStorage.getItem('projetos')){
-        const projetos = await Ajax('https://api.github.com/users/rennerborges/repos');
-        localStorage.setItem('projetos', JSON.stringify(projetos.data));
-    } 
+function verifyProjetosLocalStorage(){
+    return new Promise(async(resolve, reject)=>{
+        try {
+            if(!localStorage.getItem('projetos')){
+                const projetos = await Ajax('https://api.github.com/users/rennerborges/repos');
+                localStorage.setItem('projetos', JSON.stringify(projetos.data));
+            }
+
+            resolve(projetos);
+        } catch (error) {
+            reject(error);
+        }
+    })
 }
