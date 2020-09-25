@@ -1,7 +1,7 @@
+window.data = new Date;
 typerWriter();
 adaptHeightViewport();
 getYear('#valueAno');
-
 getProjetos();
 
 function adaptHeightViewport(){
@@ -61,7 +61,7 @@ function swiperProjetos(){
 
 async function getProjetos(){
 
-    await verifyProjetosLocalStorage();
+    await verifyLocalStorage();
 
     let projetos = localStorage.getItem('projetos');
 
@@ -122,11 +122,14 @@ function prepareTags(tags){
     return tag;
 }
 
-function verifyProjetosLocalStorage(){
+function verifyLocalStorage(){
     return new Promise(async(resolve, reject)=>{
         try {
-            if(!localStorage.getItem('projetos')){
+            const hora = window.data.getHours();
+
+            if(!localStorage.getItem('projetos') || !localStorage.getItem('horaSetProjetos') || hora != localStorage.getItem('horaSetProjetos')){
                 const projetos = await Ajax('https://api.github.com/users/rennerborges/repos');
+                localStorage.setItem('horaSetProjetos', hora);
                 localStorage.setItem('projetos', JSON.stringify(projetos.data));
             }
 
