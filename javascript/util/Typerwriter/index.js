@@ -55,7 +55,7 @@ function typerWriter() {
         css.innerHTML = `
             .typewrite > .wrap::after {
                 content: '';
-                border-right: 0.08em solid #fff; animation: cursorPiscar 1s infinite;
+                border-right: 0.08em solid #1a237e; animation: cursorPiscar 1s infinite;
             }
 
             @keyframes cursorPiscar{
