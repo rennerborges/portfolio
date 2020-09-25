@@ -305,6 +305,7 @@ html {
     border-radius: 8px;
     padding: 20px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .projetos-card .title > h2 {
@@ -346,12 +347,17 @@ html {
 
 .preloader {
     margin-top: 30px;
-    height: 300px;
+    height: 350px;
 
 }
 .swiper-container {
     display: none;
+    height: 350px;
     animation: fadein 0.8s;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #616161 !important;
 }
 
 /* =========== CONTRUIÇÕES ========== */

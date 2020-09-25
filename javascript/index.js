@@ -77,7 +77,7 @@ async function getProjetos(){
 
 
         swiper.innerHTML +=
-            ` <div class="swiper-slide">
+            ` <div class="swiper-slide" onclick="redirect('${projetos[i].html_url}')">
                 <div class="projetos-card">
                     <div class="title">
                         <h2>${projetos[i].name}<h2>
@@ -135,4 +135,8 @@ function verifyProjetosLocalStorage(){
             reject(error);
         }
     })
+}
+
+function redirect(url){
+    window.open(url, '_blank');
 }
