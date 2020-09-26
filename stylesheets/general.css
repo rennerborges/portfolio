@@ -321,10 +321,6 @@ html {
 }
 
 
-.swiper-container {
-    margin-top: 30px;
-}
-
 .tags {
     width: 100%;
     display: flex;
@@ -351,6 +347,7 @@ html {
 
 }
 .swiper-container {
+    margin-top: 30px;
     display: none;
     height: 350px;
     animation: fadein 0.8s;
@@ -380,6 +377,46 @@ html {
     border: 1px solid #1a237e;
 }
 
+/* =========== ERROR ========== */
+.error {
+    width: 100%;
+    height: 350px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 0.8s;
+    display: none;
+}
+
+.error h2 {
+    font-weight: 400;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    position: relative;
+    color: #fafafa;
+}
+path {
+    animation: rotate 1s infinite;
+}
+
+path:nth-of-type(2) {
+    animation-delay: .2s;
+}
+
+@keyframes rotate {
+    from {
+        stroke-dasharray: 5;
+        stroke-dashoffset: 7.3;
+    }
+
+    to {
+        stroke-dasharray: 5;
+        stroke-dashoffset: 17.3;
+    }
+}
+
 /* =========== PRELOADER ========== */
 
 
@@ -401,6 +438,7 @@ html {
     letter-spacing: 2px;
     position: relative;
     transform: translateY(-100px);
+    color: #fafafa;
 }
 
 .loader {

@@ -59,44 +59,49 @@ function swiperProjetos(){
     }
 }
 
-async function getProjetos(){
+async function getProjetos() {
 
-    await verifyLocalStorage();
+    try {
+        await verifyLocalStorage();
 
-    let projetos = localStorage.getItem('projetos');
+        let projetos = localStorage.getItem('projetos');
 
-    let swiper = document.querySelector('.swiper-wrapper');
+        let swiper = document.querySelector('.swiper-wrapper');
 
-    projetos = JSON.parse(projetos);
-
-
-    for (let i = 0; i < projetos.length; i++) {
-        const tags = await Ajax(projetos[i].languages_url);
-
-        const contentTags =  prepareTags(tags.data)
+        projetos = JSON.parse(projetos);
 
 
-        swiper.innerHTML +=
-            ` <div class="swiper-slide" onclick="redirect('${projetos[i].html_url}')">
-                <div class="projetos-card">
-                    <div class="title">
-                        <h2>${projetos[i].name}<h2>
+        for (let i = 0; i < projetos.length; i++) {
+            const tags = await Ajax(projetos[i].languages_url);
+
+            const contentTags = prepareTags(tags.data)
+
+
+            swiper.innerHTML +=
+                ` <div class="swiper-slide" onclick="redirect('${projetos[i].html_url}')">
+                    <div class="projetos-card">
+                        <div class="title">
+                            <h2>${projetos[i].name}<h2>
+                        </div>
+                        <div class="description">
+                            <p>${projetos[i].description ? projetos[i].description : 'Projeto sem descrição'}</p>
+                        </div>
+                        <div class="tags">
+                            ${contentTags}
+                        </div>
                     </div>
-                    <div class="description">
-                        <p>${projetos[i].description ? projetos[i].description : 'Projeto sem descrição'}</p>
-                    </div>
-                    <div class="tags">
-                        ${contentTags}
-                    </div>
-                </div>
-            </div>`
-        
+                </div>`
+
+        }
+
+        document.querySelector('.preloader').style.display = 'none';
+        document.querySelector('.swiper-container').style.display = 'block';
+
+        swiperProjetos();
+    } catch (error) {
+        document.querySelector('.preloader').style.display = 'none';
+        document.querySelector('.error').style.display = 'flex';
     }
-
-    document.querySelector('.preloader').style.display = 'none';
-    document.querySelector('.swiper-container').style.display = 'block';
-    
-    swiperProjetos();
 
 }
 
@@ -132,7 +137,6 @@ function verifyLocalStorage(){
                 localStorage.setItem('horaSetProjetos', hora);
                 localStorage.setItem('projetos', JSON.stringify(projetos.data));
             }
-
             resolve(projetos);
         } catch (error) {
             reject(error);
