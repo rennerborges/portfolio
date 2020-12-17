@@ -3,6 +3,7 @@ typerWriter();
 adaptHeightViewport();
 getYear('#valueAno');
 getProjetos();
+addEventDrawer();
 
 function adaptHeightViewport(){
     actionAdapt();
@@ -146,4 +147,41 @@ function verifyLocalStorage(){
 
 function redirect(url){
     window.open(url, '_blank');
+}
+
+
+function addEventDrawer(){
+    document.querySelector('.drawerIcon').addEventListener('click', (event)=> {
+        hangleChangeDrawerMenu();
+        stopPropagationDrawerMenu(event);
+    });
+    document.querySelector('.drawerContent').addEventListener('click', (event)=> stopPropagationDrawerMenu(event));
+    document.querySelector('.drawerContent a').addEventListener('click', hangleChangeDrawerMenu);
+    document.querySelector('body').addEventListener('click', verifyClickDrawerMenu);
+}
+
+function stopPropagationDrawerMenu(event){
+    event.stopPropagation();
+}
+
+function verifyClickDrawerMenu(){
+    let drawerContent = document.querySelector('.drawerContent');
+
+    const {display} =  getComputedStyle(drawerContent);
+
+    if(display !== 'none') {
+        hangleChangeDrawerMenu();
+    }
+}
+
+function hangleChangeDrawerMenu(){
+    let drawerContent = document.querySelector('.drawerContent');
+
+    const {display} =  getComputedStyle(drawerContent);
+
+    if(display === 'none') {
+        return drawerContent.style.display = 'block';
+    }
+
+    return drawerContent.style.display = 'none';
 }

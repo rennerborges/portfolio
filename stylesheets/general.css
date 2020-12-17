@@ -88,22 +88,95 @@ html {
     color: var(--azul);
 }
 
-#s-header nav ul {
+#s-header nav > .container > ul {
     display: flex;
     list-style-type: none;
 }
 
-#s-header nav ul>li {
+#s-header nav > .container > ul > li {
     margin-left: 15px;
 }
 
-#s-header nav ul>li>a {
+#s-header nav > .container > ul > li >a {
     text-decoration: none;
+    color: var(--cinzaTitulo);
+    transition: color 0.4s ease;
+}
+
+#s-header nav > .container > ul > li:hover >a {
     color: var(--azul);
 }
 
-#s-header nav ul>li:first-child {
+#s-header nav > .container > ul > li:first-child {
     margin-left: 0px;
+}
+
+#s-header nav .drawerMenu {
+    position: relative;
+    display: none;
+}
+
+#s-header nav .drawerMenu .drawerIcon {
+    cursor: pointer;
+}
+
+#s-header nav .drawerMenu .drawerContent {
+    position: absolute;
+    border-radius: 12px 0px 12px 12px;
+    box-shadow: 0px 0px 20px #e7e7e7;
+    right: 0;
+    margin-top: 15px;
+    padding: 10px;
+    display: none;
+}
+
+#s-header nav .drawerMenu .drawerContent::before {
+    content:"\A";
+    border-style: solid;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 0px solid transparent;
+    border-bottom: 15px solid white;
+    position: absolute;
+    right: 0;
+    top: -15px;
+}
+
+#s-header nav .drawerMenu .drawerContent > ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0;
+}
+
+#s-header nav .drawerMenu .drawerContent > ul > li {
+    border-bottom: 1px solid var(--cinza);
+    display: flex;
+}
+
+#s-header nav .drawerMenu .drawerContent > ul > li:last-child {
+    border-bottom: none;
+}
+
+#s-header nav .drawerMenu .drawerContent > ul > li > a {
+    color: var(--cinzaTitulo);
+    transition: color 0.4s ease;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+#s-header nav .drawerMenu .drawerContent > ul > li:hover > a {
+    color: var(--azul);
+}
+
+@media screen and (max-width: 550px){
+    #s-header nav > .container > ul {
+        display: none;
+    }
+    #s-header nav .drawerMenu {
+        display: block;
+    }
 }
 
 /* =========== HERO-BANNER ========== */
