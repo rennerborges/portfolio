@@ -5,7 +5,7 @@
 :root {
     --azul: #1a237e;
     --azulClaro: #E5F3FF;
-    --azulHover: #0C62AD;
+    --azulHover: #121859;
     --azulActive: #004C8F;
     --cinza: #e0e6eb;
     --cinzaTitulo: #50606D;
@@ -642,7 +642,7 @@ path:nth-of-type(2) {
     color: var(--cinzaTitulo);
 }
 
-#s-contato .contato > .content-button > div {
+#s-contato .contato > .content-button > a > div {
     color: white;
     padding: 15px 25px;
     box-sizing: border-box;
@@ -652,9 +652,10 @@ path:nth-of-type(2) {
     cursor: pointer;
     white-space: nowrap;
     margin-left: 20px;
+    transition: background-color 0.5s ease;
 }
 
-#s-contato .contato > .content-button > div:hover {
+#s-contato .contato > .content-button > a > div:hover {
     background-color: var(--azulHover);
 }
 
@@ -673,7 +674,7 @@ path:nth-of-type(2) {
         text-align: center;
     }
 
-    #s-contato .contato > .content-button > div {
+    #s-contato .contato > .content-button > a > div {
         margin: 0px;
         margin-top: 20px;
     }
