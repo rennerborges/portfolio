@@ -30,7 +30,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.espacamento-sections {
+.espacamento-sections:not(:last-child) {
     padding: 75px 0px;
     box-sizing: border-box;
 }
@@ -231,6 +231,7 @@ html {
 .right-heroBanner img {
     width: 100%;
     max-height: 400px;
+    object-fit: cover;
 }
 
 /* =========== ARROW ========== */
@@ -302,7 +303,7 @@ html {
 
 @media screen and (max-width: 500px) {
     #sobreMim {
-        margin-top: 120px;
+        margin-top: 125px;
     }
     #sobreMim>.container {
         flex-direction: column;
@@ -445,6 +446,10 @@ html {
 
 /* =========== CONTRUIÇÕES ========== */
 
+#contribuições {
+    padding-bottom: 0;
+}
+
 .item-contribuicoes {
     flex: 1;
     min-width: 280px;
@@ -462,6 +467,10 @@ html {
     transition: 0.4s;
     border: 1px solid var(--azul);
     color: var(--azul);
+}
+
+.item-contribuicoes:last-child {
+    margin-bottom: 0;
 }
 
 /* =========== ERROR ========== */
@@ -725,7 +734,7 @@ path:nth-of-type(2) {
 
 #s-footer header > .item-groupFooter .icone-footer {
     width: 20px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 #s-footer footer {
@@ -787,6 +796,7 @@ path:nth-of-type(2) {
     #s-footer header > .item-groupFooter:last-child > ul > li > a > span {
         display: none;
     }
+
 }
 
 @media screen and (max-width: 550px){
@@ -860,6 +870,7 @@ path:nth-of-type(2) {
     .espacamento-sections {
         padding: 50px 0px;
     }
+
     #sobreMim .container .fotoPerfil {
         display: none;
     }
