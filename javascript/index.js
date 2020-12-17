@@ -156,7 +156,7 @@ function addEventDrawer(){
         stopPropagationDrawerMenu(event);
     });
     document.querySelector('.drawerContent').addEventListener('click', (event)=> stopPropagationDrawerMenu(event));
-    document.querySelector('.drawerContent a').addEventListener('click', hangleChangeDrawerMenu);
+    document.querySelectorAll('.drawerContent a').forEach(element => element.addEventListener('click', hangleChangeDrawerMenu))
     document.querySelector('body').addEventListener('click', verifyClickDrawerMenu);
 }
 
